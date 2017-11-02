@@ -5,7 +5,7 @@
 //  Created by Mani on 02/11/17.
 //  Copyright © 2017 iOSDevGuy. All rights reserved.
 //
-
+//This is created by har
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print(addTwonNumbers(first: 3, second: 4))
        
+    }
+    func dummy(){
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         _ = isEvenNumber(number: 10)
