@@ -14,6 +14,8 @@
 		3CAA04C01FAB912B00301E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA04BF1FAB912B00301E5E /* Assets.xcassets */; };
 		3CAA04C31FAB912B00301E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA04C11FAB912B00301E5E /* LaunchScreen.storyboard */; };
 		3CAA04CE1FAB912B00301E5E /* test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA04CD1FAB912B00301E5E /* test1Tests.swift */; };
+		3CAA04DF1FAB996F00301E5E /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA04DE1FAB996F00301E5E /* WebServiceHandler.swift */; };
+		3CAA04E31FAB99BA00301E5E /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA04E21FAB99BA00301E5E /* CoreDataHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		3CAA04C91FAB912B00301E5E /* test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAA04CD1FAB912B00301E5E /* test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1Tests.swift; sourceTree = "<group>"; };
 		3CAA04CF1FAB912B00301E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAA04DE1FAB996F00301E5E /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		3CAA04E21FAB99BA00301E5E /* CoreDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 		3CAA04B41FAB912B00301E5E /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				3CAA04DD1FAB995500301E5E /* Webservices */,
+				3CAA04DC1FAB994E00301E5E /* AppDelegate */,
+				3CAA04DB1FAB994500301E5E /* CoreData */,
 				3CAA04B51FAB912B00301E5E /* AppDelegate.swift */,
 				3CAA04B71FAB912B00301E5E /* ViewController.swift */,
 				3CAA04B91FAB912B00301E5E /* Main.storyboard */,
@@ -97,6 +104,29 @@
 				3CAA04CF1FAB912B00301E5E /* Info.plist */,
 			);
 			path = test1Tests;
+			sourceTree = "<group>";
+		};
+		3CAA04DB1FAB994500301E5E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA04E21FAB99BA00301E5E /* CoreDataHandler.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3CAA04DC1FAB994E00301E5E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3CAA04DD1FAB995500301E5E /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA04DE1FAB996F00301E5E /* WebServiceHandler.swift */,
+			);
+			path = Webservices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CAA04B81FAB912B00301E5E /* ViewController.swift in Sources */,
+				3CAA04E31FAB99BA00301E5E /* CoreDataHandler.swift in Sources */,
 				3CAA04B61FAB912B00301E5E /* AppDelegate.swift in Sources */,
 				3CAA04BE1FAB912B00301E5E /* test1.xcdatamodeld in Sources */,
+				3CAA04DF1FAB996F00301E5E /* WebServiceHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +442,7 @@
 				3CAA04D41FAB912B00301E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAA04D51FAB912B00301E5E /* Build configuration list for PBXNativeTarget "test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +451,7 @@
 				3CAA04D71FAB912B00301E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

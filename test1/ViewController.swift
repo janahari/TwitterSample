@@ -9,16 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var isEven: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(addTwonNumbers(first: 3, second: 4))
+       
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        _ = isEvenNumber(number: 10)
+        print("Result is :\(isEven)")
     }
+    func isEvenNumber(number: Int) -> Bool{
+        if number % 2 == 0{
+            isEven = true
+        }
+        return isEven
+    }
+    func addTwonNumbers(first: Int, second: Int) -> Int {
+        return first + second
+    }
+    
 
 
 }
